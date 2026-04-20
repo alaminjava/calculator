@@ -13,46 +13,47 @@
     <section class="calculatorSection">
         <div class="displayPart">
             <form action="" method="post">
-                <input type="text" class="display" placeholder="0" readonly>
+                <input type="text" class="display" id="calcDisplayID" placeholder="0" readonly>
             </form>
         </div>
         <div class="container text-center buttonPart">
             <div class="row row1Top">
-                <div class="col btnDiv">%</div>
-                <div class="col btnDiv">7</div>
-                <div class="col btnDiv">8</div>
-                <div class="col btnDiv">9</div>
-                <div class="col btnDiv">÷</div>
+                <div class="col btnDiv box" data-value="%">%</div>
+                <div class="col btnDiv box" data-value="7">7</div>
+                <div class="col btnDiv box" data-value="8">8</div>
+                <div class="col btnDiv box" data-value="9">9</div>
+                <div class="col btnDiv box" data-value="/">÷</div>
               </div>
               
               <div class="row row2Middle">
-                <div class="col btnDiv">⌫</div>
-                <div class="col btnDiv">4</div>
-                <div class="col btnDiv">5</div>
-                <div class="col btnDiv">6</div>
-                <div class="col btnDiv">×</div>
+                <div class="col btnDiv box" data-value="back">⌫</div>
+                <div class="col btnDiv box" data-value="4">4</div>
+                <div class="col btnDiv box" data-value="5">5</div>
+                <div class="col btnDiv box" data-value="6">6</div>
+                <div class="col btnDiv box" data-value="*">×</div>
               </div>
               
               <div class="row row3Middle">
-                <div class="col btnDiv">CE</div>
-                <div class="col btnDiv">1</div>
-                <div class="col btnDiv">2</div>
-                <div class="col btnDiv">3</div>
-                <div class="col btnDiv">−</div>
-              </div>
-              
-              <div class="row row4Bottom">
-                <div class="col btnDiv">⏻</div>
-                <div class="col btnDiv">0</div>
-                <div class="col btnDiv">.</div>
-                <div class="col btnDiv">±</div>
-                <div class="col btnDiv">C</div>
-              </div>
-              
-              <div class="row row5Bottom">
-                <div class="col btnDiv equal">=</div>
-                <div class="col btnDiv">+</div>
-              </div>
+                <div class="col btnDiv box" data-value="C">C</div>
+                <div class="col btnDiv box" data-value="1">1</div>
+                <div class="col btnDiv box" data-value="2">2</div>
+                <div class="col btnDiv box" data-value="3">3</div>
+                <div class="col btnDiv box" data-value="-">--</div>
+                
+            </div>
+            
+            <div class="row row4Bottom">
+                <div class="col btnDiv box" data-value="CE">CE</div>
+                <div class="col btnDiv box" data-value="0">0</div>
+                <div class="col btnDiv box" data-value=".">.</div>
+                <div class="col btnDiv box" data-value="±">±</div>
+                <div class="col btnDiv box plus-big" data-value="+">+</div>
+
+            </div>
+            
+            <div class="row row5Bottom justify-content-center">
+                <div class="col-8 btnDiv box equal-center" data-value="=">=</div>
+            </div>
             </div>
         </div>
     </section>
