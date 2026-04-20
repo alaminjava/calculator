@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* BODY */
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f2f2f2;
+}
+
+/* CALCULATOR Btn Part */
+.btnPart{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 15px 25px rgba(0,0,0,0.5);
+    border:1px solid #7a0f0f;
+}
+
+/* BUTTON colors */
+.btnDiv{
+    width:60px;
+    height:50px;
+    margin:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    transition:.1s;
+    background:linear-gradient(145deg,#9c1a1a,#6a0d0d);
+    box-shadow:0 5px #4a0808, 0 8px 10px rgba(0,0,0,0.3);
+}
+
+/* btn PRESS */
+.btnDiv:active{
+    transform:translateY(4px);
+    box-shadow:0 1px #4a0808, 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Calc Display */
+.displayPart{
+    width:280px;
+    margin:15px auto;
+}
+
+.display{
+    width:100%;
+    height:70px;
+    padding:10px 15px;
+    font-size:28px;
+    text-align:right;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:linear-gradient(145deg,#1e1e1e,#2a2a2a);
+    color:#00ffcc;
+    font-family:"Share Tech Mono", monospace;
+    letter-spacing:2px;
+    text-shadow:0 0 8px rgba(0,255,204,0.6);
+    box-shadow:inset 0 4px 10px rgba(0,0,0,0.6),
+               inset 0 -2px 5px rgba(255,255,255,0.05);
+}
+
+.display::placeholder{
+    color:rgba(0,255,204,0.4);
+}
+
+.display:focus{
+    box-shadow:inset 0 4px 10px rgba(0,0,0,0.7),
+               0 0 8px rgba(0,255,204,0.3);
+}
+
+.buttonPart > .row{
+    padding:5px;
+}
+
+/* Number btn color */
+.box[data-value="0"],
+.box[data-value="1"],
+.box[data-value="2"],
+.box[data-value="3"],
+.box[data-value="4"],
+.box[data-value="5"],
+.box[data-value="6"],
+.box[data-value="7"],
+.box[data-value="8"],
+.box[data-value="9"]{
+    background:#00ffd5;
+    text-shadow:0 0 8px rgba(0,255,213,0.6);
+}
+
+/* operator color */
+.box[data-value="+"],
+.box[data-value="-"],
+.box[data-value="*"],
+.box[data-value="/"],
+.box[data-value="="]{
+    background:#ffcc00;
+    text-shadow:0 0 8px rgba(255,204,0,0.6);
+}
+
+/* Special COlors */
+.box[data-value="C"],
+.box[data-value="CE"],
+.box[data-value="back"]{
+    background:#ff4d4d;
+    text-shadow:0 0 8px rgba(255,77,77,0.6);
+}
+
+/* Extra btn colors */
+.box[data-value="."],
+.box[data-value="±"],
+.box[data-value="power"]{
+    background:#a78bfa !important;
+}
