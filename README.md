@@ -1,4 +1,4 @@
-\# Calculator Project
+\ Calculator Project
 
 
 
@@ -6,7 +6,7 @@ A simple calculator built using HTML, CSS, Bootstrap, and JavaScript.
 
 
 
-\## Features
+\ Features
 
 \- Basic arithmetic operations
 
@@ -16,7 +16,7 @@ A simple calculator built using HTML, CSS, Bootstrap, and JavaScript.
 
 
 
-\## Tech Stack
+\ Tech Stack
 
 \- HTML
 
